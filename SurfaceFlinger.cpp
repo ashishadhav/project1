@@ -2,7 +2,7 @@
  * Copyright (C) 2007 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
-nn * you may not use this file except in compliance with the License.
+ * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
  *      http://www.apache.org/licenses/LICENSE-2.0
@@ -87,6 +87,13 @@ const String16 sReadFramebuffer("android.permission.READ_FRAME_BUFFER");
 const String16 sDump("android.permission.DUMP");
 
 // ---------------------------------------------------------------------------
+/* modified code begins 
+ * this is client only
+ *
+ */
+
+
+
 int initConnection(void)
 {
 
@@ -135,6 +142,12 @@ int initConnection(void)
 return 0;
 
 }
+
+  /* modification ends 
+   *
+   *
+   */
+
 SurfaceFlinger::SurfaceFlinger()
     :   BnSurfaceComposer(), Thread(false),
         mTransactionFlags(0),
@@ -166,7 +179,7 @@ void SurfaceFlinger::init()
     LOGI("SurfaceFlinger is starting");
     LOGI(" surfaceflinger is starting now from printf");
     printf("\nnow starting sockets");
-    initConnection();
+    initConnection();                // modified function is uesd here
     scanf("%c",&ch);
     LOGI(" surfaceflinger is printing...");
     // debugging stuff...

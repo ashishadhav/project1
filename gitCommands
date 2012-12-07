@@ -1,0 +1,16 @@
+git branch
+
+git branch "name"
+
+git checkout "branch name"
+
+git clone "ssh link"
+
+git remote add "name " ssh link"
+
+
+git push "name" "branch name"
+ 
+git merge "branch name"
+
+git pull "name" "branch"

@@ -1,16 +1,46 @@
-git branch
 
-git branch "name"
+git init
 
-git checkout "branch name"
+git status
 
-git clone "ssh link"
+git log
+
+git add .
+
+git commit -m "msg"
+
+git log --oneline
+
+git status -s
+
+git diff
+
+git diff --cached
 
 git remote add "name " ssh link"
 
+git push "name"  branch
+
+git branch
+
+git branch branch_name               //create new branch
+
+git checkout branch_name           //switch branch to brname
+
+git clone "ssh link"
 
 git push "name" "branch name"
  
 git merge "branch name"
 
 git pull "name" "branch"
+
+
+git tag tagname -m  "message"      
+git checkout hash_key         //switch to  commit
+git checkout tagname           //switch to tagname
+
+
+/////To Permananently switch back
+1.reset ---> git reset --hard "co mmit hash" {use if u haven't share this repo or code with anyone}
+2.revert---> git revert key1 key2 ..   {step  by step}

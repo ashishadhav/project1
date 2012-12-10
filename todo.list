@@ -2,3 +2,15 @@ install red5 server
 install eclipse JEE only others will not work
 intsall both latest version and 3.5 gallileo.
 install red5 plugin
+
+
+
+unable to find xugller jar file.
+website having poor documentation.
+maven n ivy need to be used and hence read.
+may be the jar files which i downloaded work on ubuntu.
+have to try .
+jars can be downloaded at http://xuggle.googlecode.com/svn/trunk/repo/share/java/xuggle/xuggle-xuggler/
+
+i am goiung ahed with version 5.3.
+

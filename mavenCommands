@@ -1,0 +1,8 @@
+mvn archetype:generate
+mvn compile
+mvn package
+mvn install
+mvn clean
+mvn assembly:assembly
+maven repository search
+
